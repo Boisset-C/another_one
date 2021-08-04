@@ -1,4 +1,4 @@
-export function Logo() {
+export function MobileLogo() {
   return (
     <svg
       width="inherit"

@@ -1,4 +1,4 @@
-import { Logo } from "../../icons/Logo";
+import { MobileLogo } from "../../icons/MobileLogo";
 import { Burger } from "../../icons/Burger";
 import "./mobileNav.scss";
 
@@ -6,7 +6,7 @@ export function MobileNav() {
   return (
     <div className="mobile-container">
       <a href="/">
-        <Logo />
+        <MobileLogo />
       </a>
 
       <button>

@@ -1,11 +1,12 @@
 import "./App.scss";
-import { Hero } from "./components/landingSection/hero/Hero";
+
+import { Hero } from "./components/landingSection/hero";
 
 function App() {
   return (
-    <div>
+    <>
       <Hero />
-    </div>
+    </>
   );
 }
 

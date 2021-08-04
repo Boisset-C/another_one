@@ -1,9 +1,17 @@
-.link {
-  list-style: none;
-}
 .navbar {
   display: grid;
-  grid-template-columns: 3fr 0.5fr 0.75fr 0.5fr;
+  grid-template-columns: 3fr 0.5fr 0.5fr 0.5fr;
   align-items: center;
-  max-width: 1080px;
+  max-width: 1440px;
+  margin: 0px;
+}
+
+.link {
+  list-style: none;
+  margin: 15px;
+}
+
+.a {
+  height: 56px;
+  width: 240px;
 }
