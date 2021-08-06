@@ -1,6 +1,6 @@
-import "./desktopNav.scss";
+import { NavLink } from "react-router-dom";
 import { DesktopLogo } from "../../icons/DesktopLogo";
-import { NavItem } from "../navItems/NavItem";
+import "./desktopNav.scss";
 
 export function DesktopNav() {
   return (
@@ -8,18 +8,20 @@ export function DesktopNav() {
       <nav>
         <ul className="navbar">
           <li className="link">
-            <a href="/">
+            <NavLink to="/">
               <DesktopLogo />
-            </a>
+            </NavLink>
           </li>
           <li className="link">
-            <NavItem value={"Home"} />
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="link">
-            <NavItem value={"Live Events"} />
+            <NavLink to="/events">
+              <span>Live Events</span>
+            </NavLink>
           </li>
           <li className="link">
-            <NavItem value={"Replays"} />
+            <NavLink to="/archive">Replays</NavLink>
           </li>
         </ul>
       </nav>

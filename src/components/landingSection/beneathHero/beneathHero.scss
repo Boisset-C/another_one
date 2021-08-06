@@ -1,0 +1,26 @@
+@use "../../../sassStyles//variables" as v;
+
+/* beneath the fold styles */
+.beneath-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 31.75rem;
+}
+
+.text-fold1 {
+  text-align: left;
+  margin-top: 130px;
+  color: v.$shadeFive;
+}
+.text-fold2 {
+  text-align: left;
+  margin-top: 2rem;
+  color: v.$shadeFive;
+}
+
+.fold-image {
+  margin-top: 5rem;
+  overflow-y: visible;
+  height: 502px;
+  width: 620px;
+}

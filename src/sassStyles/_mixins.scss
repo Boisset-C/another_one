@@ -1,35 +1,35 @@
-@import "./variables";
+@use './variables' as v;
 /* 
 This partial can hold any block of code that is repeatable. In our example I am using mixins to determine breakpoint sizes. They are also using variables, so if my overall lg size changes, it will update everywhere. 
 */
 
 // Breakpoints
 @mixin smMinBreakPoint {
-  @media (min-width: #{$screen-sm}) {
+  @media (min-width: #{v.$screen-sm}) {
     @content;
   }
 }
 
 @mixin mdMinBreakPoint {
-  @media (min-width: #{$screen-md}) {
+  @media (min-width: #{v.$screen-md}) {
     @content;
   }
 }
 
 @mixin lgMinBreakPoint {
-  @media (min-width: #{$screen-lg}) {
+  @media (min-width: #{v.$screen-lg}) {
     @content;
   }
 }
 
 @mixin xlMinBreakPoint {
-  @media (min-width: #{$screen-xl}) {
+  @media (min-width: #{v.$screen-xl}) {
     @content;
   }
 }
 
 @mixin xxlMinBreakPoint {
-  @media (min-width: #{$screen-xxl}) {
+  @media (min-width: #{v.$screen-xxl}) {
     @content;
   }
 }

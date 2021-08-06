@@ -11,7 +11,14 @@
   margin: 15px;
 }
 
-.a {
-  height: 56px;
-  width: 240px;
+a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 21px;
+  white-space: nowrap;
+  letter-spacing: 0.4px;
+
+  color: #27262c;
 }
