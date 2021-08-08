@@ -1,6 +1,8 @@
 import { BeneathHero } from "../../components/landingSection/beneathHero";
+import { EventPreview } from "../../components/landingSection/eventPreview";
 import { Hero } from "../../components/landingSection/hero";
-import { hero, beneathHero } from "../../data/landingData";
+import { NextEvent } from "../../components/landingSection/nextEvent";
+import { hero, beneathHero, eventPreview } from "../../data/landingData";
 import "./landingPage.scss";
 
 function LandingPage() {
@@ -17,6 +19,8 @@ function LandingPage() {
           description={beneathHero.description}
         />
       </div>
+      <EventPreview description={eventPreview.description} />
+      <NextEvent />
     </>
   );
 }

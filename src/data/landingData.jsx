@@ -10,3 +10,15 @@ export const beneathHero = {
   description:
     "In partnership with Virtual Veterans Communities, NEW YORK UNIVERSITY presents is a live interview event series hosted by Veterans and Military Students for the benefit of veterans pursuing higher education.",
 };
+
+export const eventPreview = {
+  description:
+    "Are you a veteran who’s ready to make the leap into higher education? Learn what you have to look forward to and prepare for your transition.",
+};
+
+export const landingData = {
+  title: "We're providing perspective, not just education.",
+  subtitle:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  day: "20th July",
+};

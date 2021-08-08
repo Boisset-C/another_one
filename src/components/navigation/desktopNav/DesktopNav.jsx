@@ -8,20 +8,24 @@ export function DesktopNav() {
       <nav>
         <ul className="navbar">
           <li className="link">
-            <NavLink to="/">
+            <NavLink activeClassName="active-link" to="/">
               <DesktopLogo />
             </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/">Home</NavLink>
+            <NavLink activeClassName="active-link" to="/">
+              Home
+            </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/events">
+            <NavLink activeClassName="active-link" to="/events">
               <span>Live Events</span>
             </NavLink>
           </li>
           <li className="link">
-            <NavLink to="/archive">Replays</NavLink>
+            <NavLink activeClassName="active-link" to="/archive">
+              Replays
+            </NavLink>
           </li>
         </ul>
       </nav>

@@ -1,26 +1,53 @@
 @use "../../../sassStyles//variables" as v;
+@use "../../../sassStyles/mixins" as m;
 
 /* beneath the fold styles */
 .beneath-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  height: 31.75rem;
+  grid-template-columns: 1fr;
+  height: 596px;
+  width: 376px;
+
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 31.75rem;
+  }
+}
+.text-wrapper {
+  width: 21.875rem;
+
+  @include m.mdMinBreakPoint {
+    width: 39.375rem;
+    margin-top: 8.125rem;
+  }
 }
 
 .text-fold1 {
   text-align: left;
-  margin-top: 130px;
+  margin-top: 2rem;
   color: v.$shadeFive;
+  margin-left: 12px;
 }
 .text-fold2 {
   text-align: left;
   margin-top: 2rem;
   color: v.$shadeFive;
+  margin-left: 12px;
 }
 
 .fold-image {
-  margin-top: 5rem;
-  overflow-y: visible;
-  height: 502px;
-  width: 620px;
+  margin-top: 2rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 5rem;
+    overflow-y: visible;
+    height: 502px;
+    width: 620px;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }
