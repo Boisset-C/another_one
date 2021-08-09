@@ -1,5 +1,5 @@
 import "./beneathHero.scss";
-import foldImage from "../../../assets/fold_image.png";
+import FoldImage from "../../../assets/fold-image.png";
 
 export function BeneathHero(props) {
   return (
@@ -9,9 +9,9 @@ export function BeneathHero(props) {
         <p className="text-fold2">{props.description}</p>
       </div>
 
-      <div className="fold-image">
-        <img src={foldImage} alt="soldier and his family" />
-      </div>
+      <figure className="fold-image">
+        <img src={FoldImage} alt="soldier and his family" />
+      </figure>
     </div>
   );
 }

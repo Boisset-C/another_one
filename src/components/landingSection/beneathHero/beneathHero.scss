@@ -27,17 +27,18 @@
   text-align: left;
   margin-top: 2rem;
   color: v.$shadeFive;
-  margin-left: 12px;
+  margin-left: 3rem;
 }
 .text-fold2 {
   text-align: left;
   margin-top: 2rem;
   color: v.$shadeFive;
-  margin-left: 12px;
+  margin-left: 3rem;
 }
 
 .fold-image {
   margin-top: 2rem;
+  max-width: 1440px;
 
   @include m.mdMinBreakPoint {
     margin-top: 5rem;

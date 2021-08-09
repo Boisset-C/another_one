@@ -1,26 +1,13 @@
 @use "../../../sassStyles/variables" as v;
 @use "../../../sassStyles/mixins" as m;
 
-.hero-container {
-  height: 21.75rem;
-  width: 100vw;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  @include m.mdMinBreakPoint {
-    height: 56.25rem;
-    max-width: 1440px;
-    width: 100vw;
-  }
+.cta-wrapper {
+  max-width: 39.375rem;
+  margin-left: 5rem;
 }
 
-h1 {
-  text-align: center;
-}
-
-p {
-  text-align: center;
+.cta-description {
+  text-align: start;
 }
 
 .register-btn {
@@ -64,11 +51,4 @@ p {
     height: 4rem;
     font-size: 1.125rem;
   }
-}
-
-.button-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }

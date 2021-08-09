@@ -21,4 +21,40 @@ export const landingData = {
   subtitle:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
   day: "20th July",
+  time: "",
+};
+
+export const nextEvent = {
+  title: "We're providing perspective, not just education.",
+  subtitle:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint",
+  day: "20th July",
+  time: "10:00",
+  AMorPM: "am",
+  timeType: "PST",
+  description:
+    "The transition from military to civilian life is not an easy one. Veterans who are looking for a career path should consider higher education, but it can be difficult to know where to start. This video series will help you understand the many different types of programs available and how they might benefit your future goals!",
+};
+
+export const cardHostData = {
+  position: "Host",
+  name: "Wade Warren",
+  bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+};
+
+export const cardGuestDataOne = {
+  position: "Guest",
+  name: "Bessie Cooper",
+  bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+};
+
+export const cardGuestDataTwo = {
+  position: "Guest",
+  name: "Cody Fisher",
+  bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+};
+
+export const callToAction = {
+  description:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 };

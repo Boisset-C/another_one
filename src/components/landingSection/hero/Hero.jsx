@@ -1,4 +1,4 @@
-import heroImage from "../../../assets/heroImage.png";
+import heroImage from "../../../assets/hero-image.png";
 import { useWindowSize } from "../../../hooks/useWindowSize";
 import { DesktopNav } from "../../navigation/desktopNav/DesktopNav";
 import { MobileNav } from "../../navigation/mobileNav/MobileNav";
