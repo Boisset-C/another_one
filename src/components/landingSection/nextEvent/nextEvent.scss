@@ -2,21 +2,13 @@
 @use "../../../sassStyles//mixins" as m;
 @use "../../../sassStyles//typography" as t;
 
-.next-event {
+.next-event-wrapper {
   display: flex;
   flex-direction: column;
 
   @include m.mdMinBreakPoint {
     display: grid;
     grid-template-columns: 1fr 1.25fr;
-  }
-}
-
-.date-text-wrapper {
-  display: flex;
-
-  @include m.mdMinBreakPoint {
-    display: flex;
   }
 }
 
@@ -44,12 +36,18 @@
   font-size: 12px;
   line-height: 167%;
   margin-left: 0.75rem;
+  margin-right: 0.75rem;
 
   color: v.$shadeTwo;
 
   @include m.mdMinBreakPoint {
     margin-left: 3rem;
   }
+}
+
+.image-summary-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
 .event-day {
@@ -73,13 +71,27 @@ time {
   }
 }
 
-.summary-wrapper {
+.summary {
   text-align: left;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  margin-top: 1.5rem;
-  margin-left: 3rem;
+  margin-left: 0.75rem;
+  font-size: 12px;
+  line-height: 20px;
   color: v.$primaryDarkColor;
+  margin-bottom: 5rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 1.5rem;
+    margin-left: 3rem;
+  }
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
 }

@@ -3,9 +3,9 @@ import "./upcomingCard.scss";
 export function UpcomingCard(props) {
   return (
     <div className="card-container">
-      <h4 className="title">{props.eventsTitle}</h4>
+      <h5 className="title">{props.eventsTitle}</h5>
       <p className="description">{props.description}</p>
-      <time>{props.date}</time>
+      <p className="upcoming-card-time">{props.date}</p>
     </div>
   );
 }

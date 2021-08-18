@@ -2,12 +2,21 @@
 @use "../../../sassStyles/mixins" as m;
 
 .cta-wrapper {
-  max-width: 39.375rem;
-  margin-left: 5rem;
+  margin-left: 0.75rem;
+  margin-bottom: 5rem;
+
+  @include m.mdMinBreakPoint {
+    max-width: 39.375rem;
+    margin-left: 5rem;
+  }
 }
 
 .cta-description {
-  text-align: start;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .register-btn {

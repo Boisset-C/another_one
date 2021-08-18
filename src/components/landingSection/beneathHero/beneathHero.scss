@@ -9,8 +9,8 @@
   padding-bottom: 4.75rem;
 
   @include m.mdMinBreakPoint {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     height: 31.75rem;
     width: 100vw;
     gap: 1rem;
@@ -33,6 +33,10 @@
   @include m.mdMinBreakPoint {
     margin-top: 2rem;
     margin-left: 3rem;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 2.625rem;
   }
 }
 .text-fold2 {
@@ -62,5 +66,5 @@
 
 img {
   height: 100%;
-  max-width: 100%;
+  width: 100%;
 }

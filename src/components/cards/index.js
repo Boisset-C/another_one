@@ -1,4 +1,4 @@
-export { CardLeft } from "./left";
-export { CardMiddle } from "./middle";
-export { CardRight } from "./right";
+export { CardLeft } from "./landingCards/guestlist";
+export { CardMiddle } from "./landingCards/guestlist/";
+export { CardRight } from "./landingCards/guestlist";
 export { UpcomingCard } from "./UpcomingCard";

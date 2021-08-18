@@ -1,11 +1,44 @@
 @use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
 
 .card-container {
-  width: 630px;
-  height: 342px;
-  background: rgba(60, 100, 177, 0.04);
+  background: v.$positionBackground;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    width: 630px;
+    height: 342px;
+  }
+}
+
+.title {
+  text-align: left;
+  margin-left: 0.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  color: v.$shadeTwo;
 }
 
 .description {
   text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin-left: 0.75rem;
+  color: v.$shadeTwo;
+}
+
+.upcoming-card-time {
+  text-align: left;
+  margin-left: 0.75rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+
+  color: v.$shadeTwo;
 }
