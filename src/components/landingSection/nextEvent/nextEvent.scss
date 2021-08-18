@@ -3,29 +3,74 @@
 @use "../../../sassStyles//typography" as t;
 
 .next-event {
-  display: grid;
-  grid-template-columns: 1fr 1.25fr;
+  display: flex;
+  flex-direction: column;
+
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1.25fr;
+  }
 }
 
 .date-text-wrapper {
   display: flex;
+
+  @include m.mdMinBreakPoint {
+    display: flex;
+  }
 }
 
-h2 {
+.next-event-title {
   text-align: center;
-  color: #3c64b1;
+  color: v.$bluePrint;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 157%;
+  }
 }
 
-h4 {
-  margin-left: 3rem;
+.next-event-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 167%;
+  margin-left: 0.75rem;
+
+  color: v.$shadeTwo;
+
+  @include m.mdMinBreakPoint {
+    margin-left: 3rem;
+  }
 }
 
 .event-day {
-  margin-left: 3rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  margin-left: 0.75rem;
+  color: v.$bluePrint;
+
+  @include m.mdMinBreakPoint {
+    margin-left: 3rem;
+  }
 }
 
 time {
-  margin-left: 3rem;
+  margin-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    margin-left: 3rem;
+  }
 }
 
 .summary-wrapper {

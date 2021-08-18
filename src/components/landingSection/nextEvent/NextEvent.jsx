@@ -8,7 +8,7 @@ export function NextEvent(props) {
 
       <article className="next-event">
         <div>
-          <h4 className="">{props.subtitle}</h4>
+          <h4 className="next-event-subheader">{props.subtitle}</h4>
 
           <div className="date-text-wrapper">
             <div className="event-date">
@@ -23,15 +23,15 @@ export function NextEvent(props) {
 
             <p className="summary-wrapper">{props.description}</p>
           </div>
-        </div>
 
-        <figure className="image-wrapper">
-          <img
-            src={NextEventImage}
-            alt="two people sitting
-          at table"
-          />
-        </figure>
+          <figure className="image-wrapper">
+            <img
+              src={NextEventImage}
+              alt="two people sitting
+            at table"
+            />
+          </figure>
+        </div>
       </article>
     </div>
   );

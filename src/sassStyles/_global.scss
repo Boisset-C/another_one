@@ -1,7 +1,7 @@
 /* 
 This partial contains styling that overrides global elements, such as the #root or body elements. In our example it is also importing the _variable.scss file to reference a color. 
 */
-@use './variables' as var;
+@use './variables' as v;
 
 * {
   box-sizing: border-box;
@@ -10,11 +10,11 @@ This partial contains styling that overrides global elements, such as the #root 
 body {
   margin: 0;
   padding: 0;
-  font-family: Arimo sans-serif;
+  font-family: v.$arimoFont;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background-color: var.$primaryAccent;
+  background-color: v.$primaryAccent;
   height: 100vh;
   min-height: 100%;
 }

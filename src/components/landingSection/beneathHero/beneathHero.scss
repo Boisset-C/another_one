@@ -5,15 +5,15 @@
 .beneath-container {
   display: grid;
   grid-template-columns: 1fr;
-  height: 596px;
-  width: 376px;
+  background: v.$bluePrint;
+  padding-bottom: 4.75rem;
 
   @include m.mdMinBreakPoint {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
     height: 31.75rem;
-    max-width: 1440px;
     width: 100vw;
+    gap: 1rem;
   }
 }
 .text-wrapper {
@@ -27,20 +27,28 @@
 
 .text-fold1 {
   text-align: left;
-  margin-top: 2rem;
+  margin-left: 0.75rem;
   color: v.$shadeFive;
-  margin-left: 3rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
 }
 .text-fold2 {
   text-align: left;
-  margin-top: 2rem;
+  margin-left: 0.75rem;
   color: v.$shadeFive;
-  margin-left: 3rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
 }
 
 .fold-image {
-  width: 100vw;
-  height: 240px;
+  width: 100%;
+  height: 100%;
   margin: 0px;
   padding: 0px;
 

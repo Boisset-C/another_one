@@ -2,31 +2,51 @@
 @use "../../../sassStyles/mixins" as m;
 
 .event-preview {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 13.625rem;
+  background: v.$lightTwo;
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 13.625rem;
+  }
+}
+
+.video-wrapper {
+  width: 376px;
+  height: 222px;
+}
+.preview-video {
+  width: 100%;
+  height: 100%;
+
+  @include m.mdMinBreakPoint {
+    margin-left: 3rem;
+  }
 }
 
 .event-text-wrapper {
-  display: flex;
-  flex-direction: column;
-  margin-left: 3rem;
-  justify-content: flex-end;
-}
-video {
-  margin-left: 3rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3rem;
+    justify-content: flex-end;
+  }
 }
 .event-text {
   text-align: left;
 }
 
-\.register-btn {
+.register-btn {
   color: v.$primaryColor;
   height: 26px;
   width: 106px;
   background: v.$bluePrint;
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 
   @include m.mdMinBreakPoint {
     width: 18.875rem;

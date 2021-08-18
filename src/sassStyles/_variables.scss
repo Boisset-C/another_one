@@ -1,6 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Arimo&display=swap");
 /* 
 This partial contains repeatable property values, such as brand colors and sizes. By storing #002e25 in the variable $primaryDark2Color I can apply it to properties like color and border while preserving the option to change the color globally later on.
 */
+
+/* FONT FAMILY */
+$arimoFont: "Arimo", sans-serif;
 
 /* COLOR THEME */
 
@@ -32,6 +36,12 @@ $shadeFive: #e5e5e5;
 
 /* Warning Color */
 $warningColor: #c43256;
+
+/* Light One */
+$lightOne: #e5e5e5;
+
+/* Light Two */
+$lightTwo: #f8f8f8;
 
 /* SCREEN SIZES */
 $screen-sm: 576px;
