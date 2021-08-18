@@ -1,10 +1,9 @@
-@use "../../../sassStyles/variables" as v;
-@use "../../../sassStyles/mixins" as m;
+@use "../../../../../sassStyles/variables" as v;
+@use "../../../../../sassStyles/mixins" as m;
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 415px;
 }
 
 .position {

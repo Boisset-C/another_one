@@ -1,5 +1,5 @@
 import "./cardRight.scss";
-import RightImage from "../../../assets/card-images/right.png";
+import RightImage from "../../../../../assets/card-images/right.png";
 
 export function CardRight(props) {
   return (

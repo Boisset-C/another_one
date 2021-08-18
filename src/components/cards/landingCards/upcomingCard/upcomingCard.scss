@@ -1,0 +1,11 @@
+@use "../../../../sassStyles/variables" as v;
+
+.card-container {
+  width: 630px;
+  height: 342px;
+  background: rgba(60, 100, 177, 0.04);
+}
+
+.description {
+  text-align: left;
+}

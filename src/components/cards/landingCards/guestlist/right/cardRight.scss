@@ -1,0 +1,36 @@
+@use "../../../../../sassStyles/variables" as v;
+@use "../../../../../sassStyles/mixins" as m;
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.position {
+  text-align: start;
+  font-size: 24px;
+  line-height: 92%;
+  margin-left: 16px;
+  color: #bebebe;
+}
+
+.name {
+  text-align: start;
+  font-size: 18px;
+  line-height: 122%;
+  margin-left: 16px;
+  color: #615e5e;
+}
+
+.bio {
+  text-align: start;
+  max-width: 88%;
+  font-size: 16px;
+  line-height: 137%;
+  margin-left: 16px;
+  color: #403e3e;
+}
+
+.text-wrap {
+  background: v.$primaryAccent;
+}

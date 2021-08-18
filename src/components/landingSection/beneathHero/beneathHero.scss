@@ -1,5 +1,5 @@
-@use "../../../sassStyles//variables" as v;
-@use "../../../sassStyles/mixins" as m;
+@use "../../../sassStyles/_variables" as v;
+@use "../../../sassStyles/_mixins" as m;
 
 /* beneath the fold styles */
 .beneath-container {
@@ -10,8 +10,10 @@
 
   @include m.mdMinBreakPoint {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1.5fr;
     height: 31.75rem;
+    max-width: 1440px;
+    width: 100vw;
   }
 }
 .text-wrapper {
@@ -37,18 +39,20 @@
 }
 
 .fold-image {
-  margin-top: 2rem;
-  max-width: 1440px;
+  width: 100vw;
+  height: 240px;
+  margin: 0px;
+  padding: 0px;
 
   @include m.mdMinBreakPoint {
     margin-top: 5rem;
     overflow-y: visible;
-    height: 502px;
-    width: 620px;
+    width: 35.75rem;
+    height: 31.25rem;
   }
 }
 
 img {
   height: 100%;
-  width: 100%;
+  max-width: 100%;
 }

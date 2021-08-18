@@ -58,3 +58,19 @@ export const callToAction = {
   description:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
 };
+
+export const UpcomingCardOne = {
+  eventsTitle:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  description:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
+  date: "Aug 3rd @ 10:00 am PST",
+};
+
+export const UpcomingCardTwo = {
+  eventsTitle:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  description:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
+  date: "Aug 3rd @ 10:00 am PST",
+};

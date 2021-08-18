@@ -3,7 +3,8 @@ import { CallToAction } from "../../components/landingSection/cta";
 import { EventPreview } from "../../components/landingSection/eventPreview";
 import { GuestList } from "../../components/landingSection/guestList/GuestList";
 import { Hero } from "../../components/landingSection/hero";
-import { NextEvent } from "../../components/landingSection/nextEvent";
+import { NextEvent } from "../../components/landingSection/nextEvent/NextEvent";
+import { UpcomingEvents } from "../../components/landingSection/upcomingEvents/UpcomingEvents";
 import {
   hero,
   beneathHero,
@@ -39,6 +40,7 @@ function LandingPage() {
       />
       <GuestList />
       <CallToAction description={callToAction.description} />
+      <UpcomingEvents />
     </>
   );
 }

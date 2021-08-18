@@ -5,3 +5,5 @@ export { cardHostData } from "./landingData";
 export { cardGuestDataOne } from "./landingData";
 export { cardGuestDataTwo } from "./landingData";
 export { callToAction } from "./landingData";
+export { UpcomingCardOne } from "./landingData";
+export { UpcomingCardTwo } from "./landingData";

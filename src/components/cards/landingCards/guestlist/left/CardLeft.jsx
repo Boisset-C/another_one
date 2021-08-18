@@ -1,10 +1,10 @@
-import "./cardMiddle.scss";
-import MiddleImage from "../../../assets/card-images/middle.png";
+import "./cardLeft.scss";
+import LeftImage from "../../../../../assets/card-images/left.png";
 
-export function CardMiddle(props) {
+export function CardLeft(props) {
   return (
     <section className="wrapper">
-      <img src={MiddleImage} alt="speaker" />
+      <img src={LeftImage} alt="speaker" />
 
       <div className="text-wrap">
         <p className="position">{props.position}</p>

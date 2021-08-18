@@ -1,5 +1,5 @@
-import nextEvent from "../../../assets/nextEvent.png";
 import "./nextEvent.scss";
+import NextEventImage from "../../../assets/NextEventImage.png";
 
 export function NextEvent(props) {
   return (
@@ -27,7 +27,7 @@ export function NextEvent(props) {
 
         <figure className="image-wrapper">
           <img
-            src={nextEvent}
+            src={NextEventImage}
             alt="two people sitting
           at table"
           />

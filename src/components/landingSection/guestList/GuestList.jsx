@@ -1,7 +1,7 @@
 import "./guestList.scss";
-import { CardLeft } from "../../cards/landingCards/CardLeft";
-import { CardMiddle } from "../../cards/landingCards/CardMiddle";
-import { CardRight } from "../../cards/landingCards/CardRight";
+import { CardLeft } from "../../cards/landingCards/guestlist/left/CardLeft";
+import { CardMiddle } from "../../cards/landingCards/guestlist/middle/CardMiddle";
+import { CardRight } from "../../cards/landingCards/guestlist/right/CardRight";
 import {
   cardHostData,
   cardGuestDataOne,

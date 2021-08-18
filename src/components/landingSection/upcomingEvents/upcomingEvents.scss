@@ -1,0 +1,14 @@
+@use "../../../sassStyles/variables" as v;
+
+.upcoming-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+h3 {
+  color: v.$shadeOne;
+  font-size: 30px;
+  line-height: 40px;
+  margin-left: 3rem;
+}
