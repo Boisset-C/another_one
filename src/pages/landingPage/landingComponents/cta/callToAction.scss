@@ -1,5 +1,5 @@
-@use "../../../sassStyles/variables" as v;
-@use "../../../sassStyles/mixins" as m;
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
 
 .cta-wrapper {
   margin-left: 0.75rem;
@@ -7,7 +7,7 @@
 
   @include m.mdMinBreakPoint {
     max-width: 39.375rem;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 }
 
@@ -17,6 +17,14 @@
   font-weight: normal;
   font-size: 12px;
   line-height: 20px;
+  color: v.$shadeOne;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
 .register-btn {

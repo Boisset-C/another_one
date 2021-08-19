@@ -1,9 +1,8 @@
-@use "../../../sassStyles/variables" as v;
-@use "../../../sassStyles/mixins" as m;
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
 
 .guest-list-container {
   background: v.$positionBackground;
-
   padding-bottom: 5rem;
 
   @include m.mdMinBreakPoint {

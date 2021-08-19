@@ -1,0 +1,139 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+
+.next-event-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.next-event-title {
+  text-align: center;
+  color: v.$bluePrint;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  margin-top: 3rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 6.125rem;
+    margin-bottom: 3rem;
+    font-size: 32px;
+    line-height: 157%;
+  }
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+
+  @include m.mdMinBreakPoint {
+    margin-top: 0rem;
+    margin-left: 3rem;
+    align-self: flex-start;
+  }
+}
+
+.next-event-desktop-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: v.$shadeTwo;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  height: min-content;
+}
+
+.next-event-mobile-subheader {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 167%;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  color: v.$shadeTwo;
+}
+
+.image-summary-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+  }
+}
+
+.event-day {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 110%;
+  color: v.$bluePrint;
+
+  @include m.mdMinBreakPoint {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: flex-start;
+    align-self: flex-start;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    margin-left: 0rem;
+  }
+}
+
+.am {
+  align-self: flex-end;
+
+  @include m.mdMinBreakPoint {
+    font-size: 1rem;
+  }
+}
+
+.summary {
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  margin-bottom: 5rem;
+  color: v.$primaryDarkColor;
+
+  @include m.mdMinBreakPoint {
+    font-size: 1rem;
+    line-height: 22px;
+    width: 29rem;
+    margin-top: 0rem;
+  }
+}
+
+.image-wrapper {
+  height: 100%;
+  width: 100%;
+  margin-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 3rem;
+
+  @include m.mdMinBreakPoint {
+    height: 90%;
+    width: 87%;
+  }
+}

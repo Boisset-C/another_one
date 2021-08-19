@@ -1,41 +1,24 @@
-@use "../../../sassStyles/variables" as v;
-@use "../../../sassStyles/mixins" as m;
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
+.hero-container {
+  height: 21.75rem;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-.event-preview {
-  background: v.$lightTwo;
   @include m.mdMinBreakPoint {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 13.625rem;
+    height: 56.25rem;
+    width: 100vw;
   }
 }
 
-.video-wrapper {
-  width: 376px;
-  height: 222px;
-}
-.preview-video {
-  width: 100%;
-  height: 100%;
-
-  @include m.mdMinBreakPoint {
-    margin-left: 3rem;
-  }
+.hero-header {
+  text-align: center;
 }
 
-.event-text-wrapper {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-
-  @include m.mdMinBreakPoint {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3rem;
-    justify-content: flex-end;
-  }
-}
-.event-text {
-  text-align: left;
+p {
+  text-align: center;
 }
 
 .register-btn {
@@ -45,8 +28,6 @@
   background: v.$bluePrint;
   border-radius: 2px;
   font-size: 12px;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
 
   @include m.mdMinBreakPoint {
     width: 18.875rem;
@@ -81,4 +62,11 @@
     height: 4rem;
     font-size: 1.125rem;
   }
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }

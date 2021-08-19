@@ -1,6 +1,14 @@
 @use "../../../sassStyles/variables" as v;
 @use "../../../sassStyles/mixins" as m;
 
+.footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
 .footer-title {
   font-size: 12px;
   line-height: 20px;
@@ -23,12 +31,20 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 3rem;
+  justify-items: center;
 
   @include m.mdMinBreakPoint {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 1rem;
-    padding: 40px;
-    margin-left: 5rem;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
   }
+}
+
+.partner-svg {
+  height: 40%;
+  width: 40%;
 }

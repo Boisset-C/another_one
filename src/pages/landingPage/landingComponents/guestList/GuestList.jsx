@@ -1,12 +1,12 @@
 import "./guestList.scss";
-import { CardLeft } from "../../cards/landingCards/guestlist/CardLeft";
-import { CardMiddle } from "../../cards/landingCards/guestlist/CardMiddle";
-import { CardRight } from "../../cards/landingCards/guestlist/CardRight";
+import { CardLeft } from "../../../../components/cards/landingCards/guestlist/CardLeft";
+import { CardMiddle } from "../../../../components/cards/landingCards/guestlist/CardMiddle";
+import { CardRight } from "../../../../components/cards/landingCards/guestlist/CardRight";
 import {
   cardHostData,
   cardGuestDataOne,
   cardGuestDataTwo,
-} from "../../../data/landingData";
+} from "../../../../data/landingData";
 
 export function GuestList() {
   return (

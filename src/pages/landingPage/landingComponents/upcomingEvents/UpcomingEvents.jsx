@@ -1,11 +1,11 @@
-import { UpcomingCardOne, UpcomingCardTwo } from "../../../data/landingData";
-import { UpcomingCard } from "../../cards/landingCards/upcomingCard";
+import { UpcomingCardOne, UpcomingCardTwo } from "../../../../data/landingData";
+import { UpcomingCard } from "../../../../components/cards/landingCards/upcomingCard";
 import "./upcomingEvents.scss";
 
 export function UpcomingEvents() {
   return (
     <>
-      <h3>Upcoming Events</h3>
+      <h3 className="upcoming-events-title">Upcoming Events</h3>
       <div className="upcoming-container">
         <UpcomingCard
           eventsTitle={UpcomingCardOne.eventsTitle}

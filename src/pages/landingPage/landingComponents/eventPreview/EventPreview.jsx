@@ -11,10 +11,10 @@ export function EventPreview(props) {
         </video>
       </div>
 
-      <div className="event-text-wrapper">
-        <p className="event-text">{props.description}</p>
+      <div className="event-preview-text-wrapper">
+        <h4 className="event-preview-text">{props.description}</h4>
 
-        <button className="register-btn">Register Now</button>
+        <button className="event-preview-btn">Register Now</button>
       </div>
     </section>
   );

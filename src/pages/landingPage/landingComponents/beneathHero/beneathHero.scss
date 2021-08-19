@@ -1,12 +1,12 @@
-@use "../../../sassStyles/_variables" as v;
-@use "../../../sassStyles/_mixins" as m;
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/_mixins" as m;
 
 /* beneath the fold styles */
 .beneath-container {
   display: grid;
   grid-template-columns: 1fr;
   background: v.$bluePrint;
-  padding-bottom: 4.75rem;
+  padding-bottom: 2rem;
 
   @include m.mdMinBreakPoint {
     display: flex;
@@ -29,6 +29,7 @@
   text-align: left;
   margin-left: 0.75rem;
   color: v.$shadeFive;
+  margin-bottom: 2rem;
 
   @include m.mdMinBreakPoint {
     margin-top: 2rem;
@@ -43,6 +44,7 @@
   text-align: left;
   margin-left: 0.75rem;
   color: v.$shadeFive;
+  margin-top: 2rem;
 
   @include m.mdMinBreakPoint {
     margin-top: 2rem;

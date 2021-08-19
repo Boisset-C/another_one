@@ -10,10 +10,18 @@ export function Footer() {
       <p className="footer-title">Special thanks to our partners</p>
 
       <div className="icon-container">
-        <img src={IconOne} alt="partnered logo" />
-        <img src={IconTwo} alt="partnered logo" />
-        <img src={IconThree} alt="partnered logo" />
-        <img src={IconFour} alt="partnered logo" />
+        <div className="partner-svg">
+          <img src={IconOne} alt="partnered logo" />
+        </div>
+        <div className="partner-svg">
+          <img src={IconTwo} alt="partnered logo" />
+        </div>
+        <div className="partner-svg">
+          <img src={IconThree} alt="partnered logo" />
+        </div>
+        <div className="partner-svg">
+          <img src={IconFour} alt="partnered logo" />
+        </div>
       </div>
     </footer>
   );

@@ -1,10 +1,10 @@
-import { BeneathHero } from "../../components/landingSection/beneathHero";
-import { CallToAction } from "../../components/landingSection/cta";
-import { EventPreview } from "../../components/landingSection/eventPreview";
-import { GuestList } from "../../components/landingSection/guestList/GuestList";
-import { Hero } from "../../components/landingSection/hero";
-import { NextEvent } from "../../components/landingSection/nextEvent/NextEvent";
-import { UpcomingEvents } from "../../components/landingSection/upcomingEvents/UpcomingEvents";
+import { BeneathHero } from "./landingComponents/beneathHero";
+import { CallToAction } from "./landingComponents/cta";
+import { EventPreview } from "./landingComponents/eventPreview";
+import { GuestList } from "./landingComponents/guestList/GuestList";
+import { Hero } from "./landingComponents/hero";
+import { NextEvent } from "./landingComponents/nextEvent/NextEvent";
+import { UpcomingEvents } from "./landingComponents/upcomingEvents/UpcomingEvents";
 import {
   hero,
   beneathHero,

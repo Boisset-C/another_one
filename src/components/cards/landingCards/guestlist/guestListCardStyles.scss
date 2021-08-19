@@ -25,6 +25,7 @@
   padding-left: 0.75rem;
 
   @include m.mdMinBreakPoint {
+    background: v.$primaryAccent;
   }
 }
 
