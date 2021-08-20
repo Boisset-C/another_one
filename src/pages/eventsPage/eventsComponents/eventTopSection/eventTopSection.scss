@@ -1,0 +1,22 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.event-top-section-container {
+  height: 16rem;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.event-page-title {
+  text-align: center;
+  color: v.$bluePrint;
+  font-size: 0.75rem;
+  line-height: 0.8rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 44px;
+    line-height: 48px;
+  }
+}

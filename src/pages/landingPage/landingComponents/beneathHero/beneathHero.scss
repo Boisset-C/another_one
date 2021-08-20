@@ -18,6 +18,7 @@
 }
 .text-wrapper {
   width: 21.875rem;
+  margin-bottom: 1rem;
 
   @include m.mdMinBreakPoint {
     width: 39.375rem;
