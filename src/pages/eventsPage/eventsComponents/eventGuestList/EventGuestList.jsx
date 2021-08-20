@@ -1,3 +1,5 @@
+import { GuestList } from "../../../landingPage/landingComponents/guestList/GuestList";
+
 export function EventGuestList() {
-  return <h1>THIS IS THE EVENT GuestList</h1>;
+  return <GuestList />;
 }

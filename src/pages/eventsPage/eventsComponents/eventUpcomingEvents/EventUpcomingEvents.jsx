@@ -1,3 +1,3 @@
 export function EventUpcomingEvents() {
-  return <h1>THIS IS THE EVENT EVENT TOP SECTION</h1>;
+  return <h1>THIS IS THE EVENT Upcoming</h1>;
 }

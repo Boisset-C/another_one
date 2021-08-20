@@ -1,16 +1,14 @@
 import "./eventBroadcast.scss";
 
-export function EventBroadcast() {
+export function EventBroadcast(props) {
   return (
     <section>
-      <h5>Live Broadcast will begin at 12:00pm PT </h5>
-
-      <div className="broadcast-wrapper">
+      <h5 className="event-start-time">{props.announcement}</h5>
+      <div className="live-stream-wrapper">
         <iframe
+          className="iframe-responsive"
           title="Veteran Interview BroadCast"
           src="https://vimeo.com/event/2351/embed"
-          width="1280"
-          height="500"
           frameBorder="0"
           allow="autoplay;fullscreen"
           allowFullScreen

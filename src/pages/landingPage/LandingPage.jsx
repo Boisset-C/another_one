@@ -17,7 +17,7 @@ import "./landingPage.scss";
 function LandingPage() {
   return (
     <>
-      <div className="beneath-background">
+      <div>
         <Hero
           name={hero.title}
           subtitle={hero.subtitle}

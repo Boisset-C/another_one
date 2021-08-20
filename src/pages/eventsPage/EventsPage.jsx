@@ -3,14 +3,24 @@ import { EventBroadcast } from "./eventsComponents/eventBroadcast/EventBroadcast
 import { EventsDetail } from "./eventsComponents/eventDetails/EventsDetail";
 import { EventGuestList } from "./eventsComponents/eventGuestList/EventGuestList";
 import { EventUpcomingEvents } from "./eventsComponents/eventUpcomingEvents/EventUpcomingEvents";
-import { eventTopSection } from "../../data/EventPageData";
+import {
+  eventTopSection,
+  eventDetails,
+  eventBroadcast,
+} from "../../data/EventPageData";
 
 function EventsPage() {
   return (
     <>
-      <EventTopSection title={eventTopSection.title} />
-      <EventBroadcast />
-      <EventsDetail />
+      <div>
+        <EventTopSection title={eventTopSection.title} />
+      </div>
+      <EventBroadcast announcement={eventBroadcast.announcement} />
+      <EventsDetail
+        title={eventDetails.title}
+        subheader={eventDetails.subheader}
+        description={eventDetails.description}
+      />
       <EventGuestList />
       <EventUpcomingEvents />
     </>

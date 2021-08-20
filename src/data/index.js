@@ -12,3 +12,5 @@ export { UpcomingCardTwo } from "./landingData";
 /* Exporting Event Page Component Data */
 
 export { eventTopSection } from "./EventPageData";
+export { eventBroadcast } from "./EventPageData";
+export { eventDetails } from "./EventPageData";
