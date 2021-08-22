@@ -8,12 +8,12 @@ export function DesktopNav() {
       <nav>
         <ul className="navbar">
           <li className="link">
-            <NavLink activeClassName="active-link" to="/">
+            <NavLink to="/landing">
               <DesktopLogo />
             </NavLink>
           </li>
           <li className="link">
-            <NavLink activeClassName="active-link" to="/">
+            <NavLink activeClassName="active-link" to="/landing">
               Home
             </NavLink>
           </li>

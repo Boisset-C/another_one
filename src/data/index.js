@@ -14,3 +14,13 @@ export { UpcomingCardTwo } from "./landingData";
 export { eventTopSection } from "./EventPageData";
 export { eventBroadcast } from "./EventPageData";
 export { eventDetails } from "./EventPageData";
+
+/* first upcoming event */
+export { firstEventGuestOne } from "./EventPageData";
+export { firstEventGuestTwo } from "./EventPageData";
+export { firstEvent } from "./EventPageData";
+
+/* second upcoming event */
+export { secondEventGuestOne } from "./EventPageData";
+export { secondEventGuestTwo } from "./EventPageData";
+export { secondEvent } from "./EventPageData";

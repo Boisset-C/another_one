@@ -11,6 +11,7 @@ function App() {
         <Route path="/" exact>
           <Redirect to="/landing" />
         </Route>
+
         <Route path="/landing">
           <LandingPage />
         </Route>

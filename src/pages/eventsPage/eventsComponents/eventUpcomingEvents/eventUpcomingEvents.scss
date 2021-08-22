@@ -1,0 +1,19 @@
+@use "../../../../sassStyles/variables" as v;
+@use "../../../../sassStyles/mixins" as m;
+
+.eue-header {
+  font-style: normal;
+  font-weight: normal;
+  color: v.$shadeOne;
+  font-size: 18px;
+  line-height: 22px;
+  margin-left: 0.75rem;
+
+  @include m.mdMinBreakPoint {
+    font-size: 30px;
+    line-height: 40px;
+    margin-left: 5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 1rem;
+  }
+}

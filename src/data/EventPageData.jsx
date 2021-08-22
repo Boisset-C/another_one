@@ -1,3 +1,8 @@
+import firstEventUpcomingGuestOne from "../assets/upcoming-guest/firstEventUpcomingGuestOne.png";
+import firstEventUpcomingGuestTwo from "../assets/upcoming-guest/firstEventUpcomingGuestTwo.png";
+import secondEventUpcomingGuestOne from "../assets/upcoming-guest/secondEventUpcomingGuestOne.png";
+import secondEventUpcomingGuestTwo from "../assets/upcoming-guest/secondEventUpcomingGuestTwo.png";
+
 export const eventTopSection = {
   title: "EVENT NAME",
 };
@@ -15,25 +20,47 @@ export const eventDetails = {
 };
 
 /* first upcoming event */
+export const firstEvent = {
+  titleOne:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  descriptionOne:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
+  dateOne: "Aug 3rd @ 10:00 am PST",
+};
 
+// card one
 export const firstEventGuestOne = {
   name: "Brooklyn Simmons",
   bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ",
+  image: `${firstEventUpcomingGuestOne}`,
 };
 
+// card two
 export const firstEventGuestTwo = {
   name: "Brooklyn Simmons",
   bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ",
+  image: `${firstEventUpcomingGuestTwo}`,
 };
 
 /* second upcoming event */
+export const secondEvent = {
+  titleTwo:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
+  descriptionTwo:
+    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
+  dateTwo: "More details coming soon",
+};
 
+// card one
 export const secondEventGuestOne = {
   name: "Esther Howard",
   bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ",
+  image: `${secondEventUpcomingGuestOne}`,
 };
 
+//card two
 export const secondEventGuestTwo = {
   name: "Esther Howard",
   bio: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat ",
+  image: `${secondEventUpcomingGuestTwo}`,
 };
