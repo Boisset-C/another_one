@@ -24,3 +24,9 @@ export { firstEvent } from "./EventPageData";
 export { secondEventGuestOne } from "./EventPageData";
 export { secondEventGuestTwo } from "./EventPageData";
 export { secondEvent } from "./EventPageData";
+
+/* Export Archive Page Data */
+
+export { archiveTopSection } from "./ArchivePageData";
+export { archiveDetailsBroadcast } from "./ArchivePageData";
+export {} from "./ArchivePageData";

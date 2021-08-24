@@ -11,7 +11,7 @@ export function NextEvent(props) {
 
       {/* image-summary wrapper groups image and text together */}
       <div className="image-summary-wrapper">
-        <div className="text-wrapper">
+        <div className="next-text-wrapper">
           {isMobile ? null : (
             <h4 className="next-event-desktop-subheader">{props.subtitle}</h4>
           )}

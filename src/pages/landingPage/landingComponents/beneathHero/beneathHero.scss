@@ -16,13 +16,13 @@
     gap: 1rem;
   }
 }
-.text-wrapper {
+.beneath-text-wrapper {
   width: 21.875rem;
   margin-bottom: 1rem;
 
   @include m.mdMinBreakPoint {
     width: 39.375rem;
-    margin-top: 8.125rem;
+    margin-top: 5rem;
   }
 }
 
@@ -30,7 +30,11 @@
   text-align: left;
   margin-left: 0.75rem;
   color: v.$shadeFive;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
 
   @include m.mdMinBreakPoint {
     margin-top: 2rem;
@@ -46,10 +50,16 @@
   margin-left: 0.75rem;
   color: v.$shadeFive;
   margin-top: 2rem;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
 
   @include m.mdMinBreakPoint {
     margin-top: 2rem;
     margin-left: 3rem;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 

@@ -1,4 +1,7 @@
-import { archiveTopSection } from "../../data/ArchivePageData";
+import {
+  archiveDetailsBroadcast,
+  archiveTopSection,
+} from "../../data/ArchivePageData";
 import { ArchiveBroadcast } from "./archiveComponents/archiveBroadcast";
 import { ArchiveDetailsBroadcast } from "./archiveComponents/archiveDetailsBroadcast/ArchiveDetailsBroadcast";
 import { ArchiveGuestList } from "./archiveComponents/archiveGuestList/ArchiveGuestList";
@@ -13,7 +16,11 @@ function ArchivePage() {
         <ArchiveTopSection title={archiveTopSection.title} />
       </div>
       <ArchiveBroadcast />
-      <ArchiveDetailsBroadcast />
+      <ArchiveDetailsBroadcast
+        title={archiveDetailsBroadcast.title}
+        subheader={archiveDetailsBroadcast.subheader}
+        description={archiveDetailsBroadcast.description}
+      />
       <ArchiveGuestList />
       <ArchiveReplaySection />
       <ArchiveUpcomingEvents />

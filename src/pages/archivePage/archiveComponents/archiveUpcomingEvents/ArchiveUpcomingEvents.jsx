@@ -1,10 +1,11 @@
 import "./archiveUpcomingEvents.scss";
+import { EventUpcomingEvents } from "../../../eventsPage/eventsComponents/eventUpcomingEvents/EventUpcomingEvents";
 
 export function ArchiveUpcomingEvents() {
   return (
     <section>
       <div>
-        <h1>THIS IS ARCHIVE UPCOMING EVENTS</h1>
+        <EventUpcomingEvents />
       </div>
     </section>
   );
