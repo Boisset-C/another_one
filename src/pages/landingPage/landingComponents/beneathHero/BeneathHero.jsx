@@ -1,5 +1,5 @@
 import "./beneathHero.scss";
-import FoldImage from "../../../../assets/fold-image.png";
+import FoldImage from "../../../../assets/landing-images/fold-image.png";
 import { useWindowSize } from "../../../../hooks/useWindowSize";
 
 export function BeneathHero(props) {

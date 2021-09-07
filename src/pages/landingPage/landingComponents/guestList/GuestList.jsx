@@ -1,7 +1,6 @@
 import "./guestList.scss";
-import { CardLeft } from "../../../../components/cards/landingCards/guestlist/CardLeft";
-import { CardMiddle } from "../../../../components/cards/landingCards/guestlist/CardMiddle";
-import { CardRight } from "../../../../components/cards/landingCards/guestlist/CardRight";
+import { GuestListCard } from "../../../../components/cards/landingCards/guestList/GuestListCard";
+
 import {
   cardHostData,
   cardGuestDataOne,
@@ -12,20 +11,23 @@ export function GuestList() {
   return (
     <>
       <section className="guest-list-container">
-        <CardLeft
+        <GuestListCard
           position={cardHostData.position}
           name={cardHostData.name}
           bio={cardHostData.bio}
+          image={cardHostData.image}
         />
-        <CardMiddle
+        <GuestListCard
           position={cardGuestDataOne.position}
           name={cardGuestDataOne.name}
           bio={cardGuestDataOne.bio}
+          image={cardGuestDataOne.image}
         />
-        <CardRight
+        <GuestListCard
           position={cardGuestDataTwo.position}
           name={cardGuestDataTwo.name}
           bio={cardGuestDataTwo.bio}
+          image={cardGuestDataTwo.image}
         />
       </section>
     </>

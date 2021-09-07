@@ -70,3 +70,12 @@ p {
   justify-content: center;
   align-items: center;
 }
+
+.white-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding-bottom: 5rem;
+
+  @include m.mdMinBreakPoint {
+    padding-bottom: 100%;
+  }
+}
