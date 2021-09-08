@@ -38,7 +38,7 @@ export function ContactForm() {
         />
         <br />
         <button className="form-register-btn" type="submit">
-          Submit
+          Submit H
         </button>
       </div>
     </form>
