@@ -1,0 +1,54 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+.contact-form-container {
+  background: v.$bluePrint;
+  padding: 2rem;
+  width: 100vw;
+  height: 50%;
+}
+
+.form-wrapper {
+  position: fixed;
+  z-index: 1;
+}
+.contact-form-header {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: v.$primaryAccent;
+}
+
+.contact-label {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: v.$primaryColor;
+}
+
+.contact-input {
+  -webkit-appearance: none;
+  width: 301px;
+  height: 40px;
+
+  background: #f8f8f8;
+  border-radius: 2px;
+}
+
+.form-register-btn {
+  box-sizing: border-box;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  width: 301px;
+  height: 42px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  background: v.$bluePrint;
+  border: 1px solid v.$primaryColor;
+  color: v.$primaryColor;
+}

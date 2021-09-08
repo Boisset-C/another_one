@@ -1,5 +1,5 @@
 import "./nextEvent.scss";
-import NextEventImage from "../../../../assets/NextEventImage.png";
+import NextEventImage from "../../../../assets/landing-images/next-event-image.png";
 import { useWindowSize } from "../../../../hooks/useWindowSize";
 
 export function NextEvent(props) {

@@ -1,13 +1,12 @@
-import "./guestListCardStyles.scss";
-import MiddleImage from "../../../../assets/card-images/middle.png";
+import "./guestListCardStyle.scss";
 import { useWindowSize } from "../../../../hooks/useWindowSize";
 
-export function CardMiddle(props) {
+export function GuestListCard(props) {
   const { isMobile } = useWindowSize();
   return (
     <section className="wrapper">
       {isMobile ? <p className="position">{props.position}</p> : null}
-      <img src={MiddleImage} alt="speaker" />
+      <img src={props.image} alt="speaker" />
 
       <div className="text-wrap">
         {isMobile ? null : <p className="position">{props.position}</p>}

@@ -7,23 +7,35 @@ export function DesktopNav() {
     <div className="nav-container">
       <nav>
         <ul className="navbar">
-          <li className="link">
-            <NavLink to="/landing">
+          <li className="desktop-link">
+            <NavLink className="desktop-anchor" to="/landing">
               <DesktopLogo />
             </NavLink>
           </li>
-          <li className="link">
-            <NavLink activeClassName="active-link" to="/landing">
+          <li className="desktop-link">
+            <NavLink
+              className="desktop-anchor"
+              activeClassName="desktop-active-link"
+              to="/landing"
+            >
               Home
             </NavLink>
           </li>
-          <li className="link">
-            <NavLink activeClassName="active-link" to="/events">
+          <li className="desktop-link">
+            <NavLink
+              className="desktop-anchor"
+              activeClassName="desktop-active-link"
+              to="/events"
+            >
               <span>Live Events</span>
             </NavLink>
           </li>
-          <li className="link">
-            <NavLink activeClassName="active-link" to="/archive">
+          <li className="desktop-link">
+            <NavLink
+              className="desktop-anchor"
+              activeClassName="desktop-active-link"
+              to="/archive"
+            >
               Replays
             </NavLink>
           </li>

@@ -1,1 +1,1 @@
-export { GuestList } from "./index";
+export { GuestList } from "./GuestList";
