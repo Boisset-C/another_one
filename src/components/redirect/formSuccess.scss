@@ -1,0 +1,55 @@
+@use "../../sassStyles/variables" as v;
+@use "../../sassStyles/mixins" as m;
+
+.success-container {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 50vh;
+  background-color: v.$bluePrint;
+}
+
+.success-wrapper-logo {
+  margin: 2rem 0rem 0rem 2rem;
+}
+.success-text {
+  margin-top: 6.875rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-align: left;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+
+  color: v.$primaryAccent;
+}
+
+.success-btn {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: v.$lightTwo;
+  padding: 1rem;
+  margin: 0rem;
+}
+
+.success-btn-wrapper {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 301px;
+  height: 42px;
+  background: v.$bluePrint;
+  border: 1px solid v.$lightTwo;
+  border-radius: 2px;
+  margin-top: 2.5rem;
+}

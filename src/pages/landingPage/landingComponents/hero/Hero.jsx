@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ContactForm } from "../../../../components/form/ContactForm";
 import heroImage from "../../../../assets/landing-images/hero-image.png";
 import mobileHeroImage from "../../../../assets/landing-images/mobile-hero-image.png";
