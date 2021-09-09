@@ -1,6 +1,8 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { SideBarLogo } from "../icons/SideBarLogo";
 import { FormSuccess } from "../../components/redirect/FormSuccess";
+import { Close } from "../icons/Close";
 import "./contactForm.scss";
 
 export function ContactForm() {
@@ -26,10 +28,20 @@ export function ContactForm() {
       */
         >
           <div class="contact-form-container">
-            <SideBarLogo />
+            <div class="form-logos">
+              <div>
+                <SideBarLogo />
+              </div>
+              <div>
+                <Link to="/">
+                  <Close />
+                </Link>
+              </div>
+            </div>
             <h3 className="contact-form-header">
               Register to get event access
             </h3>
+
             {/* <input type="hidden" name="form-name" value="contact-form" /> */}
             <label className="contact-label" htmlFor="name">
               Name
@@ -57,12 +69,12 @@ export function ContactForm() {
               name="email"
             />
             <br />
-            <button
+            <input
+              type="submit"
+              value="submit"
               onClick={() => successSetToggle(!successToggle)}
               className="form-register-btn"
-            >
-              Submit
-            </button>
+            />
           </div>
         </form>
       )}

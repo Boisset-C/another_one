@@ -84,6 +84,7 @@
   background: darken(v.$bluePrint, 8%);
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 0;
 
   @include m.mdMinBreakPoint {
     width: 18.875rem;
@@ -98,6 +99,7 @@
   background: darken(v.$bluePrint, 20%);
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 0;
 
   @include m.mdMinBreakPoint {
     width: 18.875rem;
