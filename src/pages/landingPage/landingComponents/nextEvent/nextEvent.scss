@@ -15,10 +15,10 @@
   line-height: 110%;
   margin-top: 3rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     margin-top: 6.125rem;
     margin-bottom: 3rem;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 157%;
   }
 }
@@ -28,7 +28,7 @@
   flex-direction: column;
   margin-top: 2rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     margin-top: 0rem;
     margin-left: 3rem;
     align-self: flex-start;
@@ -38,17 +38,19 @@
 .next-event-desktop-subheader {
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: v.$shadeTwo;
   margin-top: 0rem;
   margin-bottom: 0rem;
   height: min-content;
+  white-space: wrap;
+  padding-right: 0.5rem;
 }
 
 .next-event-mobile-subheader {
   font-style: normal;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 167%;
   margin-left: 0.75rem;
   margin-right: 0.75rem;
@@ -59,10 +61,10 @@
   display: flex;
   flex-direction: column-reverse;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100vw;
+    height: auto;
   }
 }
 
@@ -73,11 +75,17 @@
   line-height: 110%;
   color: v.$bluePrint;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 1.5rem;
+  }
+}
+
+.pst {
+  font-size: 1rem;
+  @include m.mdMinBreakPoint {
+    font-size: 1.5rem;
   }
 }
 
@@ -87,7 +95,7 @@
   gap: 0.25rem;
   margin-left: 0.75rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
@@ -97,13 +105,19 @@
     font-size: 1.5rem;
     line-height: 1.75rem;
     margin-left: 0rem;
+
+    width: min-content;
   }
+}
+
+.time-wrapper {
+  margin-top: 1rem;
 }
 
 .am {
   align-self: flex-end;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     font-size: 1rem;
   }
 }
@@ -112,17 +126,20 @@
   text-align: left;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 0.75rem;
+  line-height: 1.125rem;
   margin-bottom: 5rem;
   color: v.$primaryDarkColor;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
+    padding: 1rem;
     font-size: 1rem;
     line-height: 22px;
-    width: 29rem;
+    width: 40vw;
     margin-top: 0rem;
   }
+
+  @include m.mdMinBreakPoint;
 }
 
 .image-wrapper {
@@ -132,8 +149,9 @@
   margin-top: 0px;
   margin-bottom: 3rem;
 
-  @include m.mdMinBreakPoint {
-    height: 90%;
-    width: 87%;
+  @include m.smMinBreakPoint {
+    height: 95%;
+    width: auto;
+    margin-right: 3rem;
   }
 }

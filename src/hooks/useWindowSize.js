@@ -10,7 +10,7 @@ export const useWindowSize = () => {
     };
   };
 
-  const getIsMobile = () => (isClient ? window.innerWidth < 768 : undefined);
+  const getIsMobile = () => (isClient ? window.innerWidth < 576 : undefined);
 
   const [windowSize, setWindowSize] = useState(getSize);
   const [isMobile, setIsMobile] = useState(getIsMobile);

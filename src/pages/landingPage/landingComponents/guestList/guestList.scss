@@ -5,7 +5,7 @@
   background: v.$positionBackground;
   padding-bottom: 5rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 3rem 5rem 3rem 5rem;

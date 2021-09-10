@@ -1,13 +1,13 @@
 @use "../../../../sassStyles/variables" as v;
 @use "../../../../sassStyles/_mixins" as m;
 .hero-container {
-  height: 21.75rem;
+  height: auto;
   width: 100vw;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     height: 56.25rem;
     width: 100vw;
   }
@@ -29,7 +29,7 @@ p {
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -43,7 +43,7 @@ p {
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -57,7 +57,7 @@ p {
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -69,6 +69,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  padding-bottom: 8rem;
 }
 
 .white-overlay {
@@ -82,7 +83,7 @@ p {
 }
 
 .hero-form {
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     display: flex;
     justify-content: center;
     margin-top: 10rem;
