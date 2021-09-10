@@ -18,7 +18,13 @@ export function CallToAction(props) {
           </button>
         </section>
       )}
-      {formToggle && <ContactForm />}
+      {formToggle && (
+        <div className="cta-overlay">
+          <div className="cta-form">
+            <ContactForm />
+          </div>
+        </div>
+      )}
     </>
   );
 }

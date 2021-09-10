@@ -36,7 +36,13 @@ export function Hero(props) {
               Register
             </button>
           )}
-          {formToggle && <ContactForm />}
+          {formToggle && (
+            <div className="hero-overlay">
+              <div className="hero-form">
+                <ContactForm />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -8,6 +8,10 @@
   height: 100%;
 
   background-color: v.$bluePrint;
+
+  @include m.mdMinBreakPoint {
+    width: min-content;
+  }
 }
 
 .success-wrapper-logo {
@@ -15,15 +19,19 @@
 }
 .success-text {
   margin-top: 6.875rem;
-
   text-align: left;
-
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 22px;
-
   color: v.$primaryAccent;
+
+  @include m.mdMinBreakPoint {
+    width: 50vw;
+    max-height: 37.5rem;
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 
 .success-logos {

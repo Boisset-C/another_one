@@ -29,7 +29,13 @@ export function EventPreview(props) {
           </div>
         </section>
       )}
-      {formToggle && <ContactForm />}
+      {formToggle && (
+        <div className="preview-overlay">
+          <div className="preview-form">
+            <ContactForm />
+          </div>
+        </div>
+      )}
     </>
   );
 }
