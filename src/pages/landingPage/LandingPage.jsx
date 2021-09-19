@@ -38,7 +38,9 @@ function LandingPage() {
         timeType={nextEvent.timeType}
         description={nextEvent.description}
       />
-      <GuestList />
+      <div className="bg-color-guestlist">
+        <GuestList />
+      </div>
       <CallToAction description={callToAction.description} />
       <UpcomingEvents />
     </>

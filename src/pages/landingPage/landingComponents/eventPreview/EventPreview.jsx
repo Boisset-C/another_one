@@ -1,5 +1,6 @@
 import "./eventPreview.scss";
 import { useState } from "react";
+import ReactPlayer from "react-player";
 import { ContactForm } from "../../../../components/form/ContactForm";
 
 export function EventPreview(props) {
@@ -10,11 +11,12 @@ export function EventPreview(props) {
       {!formToggle && (
         <section className="event-preview">
           <div className="video-wrapper">
-            <video className="preview-video" width="744" height="426" controls>
-              <source src="movie.mp4" type="video/mp4" />
-              <source src="movie.ogg" type="video/ogg" />
-              Your browser does not support the video tag.
-            </video>
+            <ReactPlayer
+              url="https://vimeo.com/562894711"
+              controls="true"
+              height="100%"
+              width="100%"
+            />
           </div>
 
           <div className="event-preview-text-wrapper">

@@ -4,6 +4,16 @@
 .next-event-container {
   display: flex;
   flex-direction: column;
+
+  @include m.smMinBreakPoint {
+  }
+
+  @include m.xxlMinBreakPoint {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 12rem;
+  }
 }
 
 .next-event-title {
@@ -62,9 +72,15 @@
   flex-direction: column-reverse;
 
   @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height: auto;
+  }
+
+  @include m.lgMinBreakPoint {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: auto;
   }
 }
 
@@ -105,13 +121,13 @@
     font-size: 1.5rem;
     line-height: 1.75rem;
     margin-left: 0rem;
-
-    width: min-content;
+    margin-right: 0rem;
   }
 }
 
 .time-wrapper {
   margin-top: 1rem;
+  width: fit-content;
 }
 
 .am {
@@ -129,17 +145,23 @@
   font-size: 0.75rem;
   line-height: 1.125rem;
   margin-bottom: 5rem;
+
   color: v.$primaryDarkColor;
 
   @include m.smMinBreakPoint {
-    padding: 1rem;
+    width: 36vw;
+    margin-right: 5rem;
+    margin-left: 1rem;
+    font-style: normal;
+    font-weight: normal;
     font-size: 1rem;
-    line-height: 22px;
-    width: 40vw;
-    margin-top: 0rem;
+    line-height: 1.2rem;
   }
 
-  @include m.mdMinBreakPoint;
+  @include m.xxlMinBreakPoint {
+    width: 36vw;
+    margin-right: 5rem;
+  }
 }
 
 .image-wrapper {
@@ -149,9 +171,13 @@
   margin-top: 0px;
   margin-bottom: 3rem;
 
-  @include m.smMinBreakPoint {
-    height: 95%;
+  @include m.mdMinBreakPoint {
+    height: 20rem;
     width: auto;
-    margin-right: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    width: max-content;
+    height: max-content;
   }
 }

@@ -9,6 +9,10 @@
     max-width: 39.375rem;
     margin-left: 3rem;
   }
+
+  @include m.xxlMinBreakPoint {
+    margin: auto;
+  }
 }
 
 .cta-description {

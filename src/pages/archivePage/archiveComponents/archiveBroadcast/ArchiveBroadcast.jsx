@@ -2,7 +2,7 @@ import "./archiveBroadcast.scss";
 
 export function ArchiveBroadcast(props) {
   return (
-    <section>
+    <section className="archive-container">
       <h5 className="archive-replay">Most recent event replay</h5>
       <div className="archive-stream-wrapper">
         <iframe

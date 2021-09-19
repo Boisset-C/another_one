@@ -8,21 +8,26 @@ import {
   eventDetails,
   eventBroadcast,
 } from "../../data/EventPageData";
+import "./eventsPage.scss";
 
 function EventsPage() {
   return (
     <>
       <div>
-        <EventTopSection title={eventTopSection.title} />
+        <div>
+          <EventTopSection title={eventTopSection.title} />
+        </div>
+        <div className="events-page-wrapper">
+          <EventBroadcast announcement={eventBroadcast.announcement} />
+          <EventsDetail
+            title={eventDetails.title}
+            subheader={eventDetails.subheader}
+            description={eventDetails.description}
+          />
+          <EventGuestList />
+          <EventUpcomingEvents />
+        </div>
       </div>
-      <EventBroadcast announcement={eventBroadcast.announcement} />
-      <EventsDetail
-        title={eventDetails.title}
-        subheader={eventDetails.subheader}
-        description={eventDetails.description}
-      />
-      <EventGuestList />
-      <EventUpcomingEvents />
     </>
   );
 }

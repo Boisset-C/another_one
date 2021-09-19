@@ -30,8 +30,7 @@ export const landingData = {
 
 export const nextEvent = {
   title: "We're providing perspective, not just education.",
-  subtitle:
-    "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint",
+  subtitle: "Amet minim mollit non deserunt ullamco est sit aliqua dolor",
   day: "20th July",
   time: "10:00",
   AMorPM: "am",

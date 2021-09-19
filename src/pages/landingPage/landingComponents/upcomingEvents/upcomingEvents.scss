@@ -12,6 +12,9 @@
     margin-left: 3rem;
     margin-right: 3rem;
   }
+  @include m.xxlMinBreakPoint {
+    margin-left: 20vw;
+  }
 }
 
 .upcoming-events-title {
@@ -27,5 +30,9 @@
     font-size: 30px;
     line-height: 40px;
     margin-left: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 20vw;
   }
 }

@@ -3,13 +3,18 @@
 
 .event-preview {
   background: v.$lightTwo;
+  width: 100vw;
 
   @include m.smMinBreakPoint {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
     gap: 4rem;
     margin-top: 5rem;
     background: v.$primaryAccent;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 12rem;
   }
 }
 

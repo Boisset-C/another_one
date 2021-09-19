@@ -6,7 +6,9 @@ export function GuestListCard(props) {
   return (
     <section className="wrapper">
       {isMobile ? <p className="position">{props.position}</p> : null}
-      <img src={props.image} alt="speaker" />
+      <div className="guest-list-card-image-wrapper">
+        <img src={props.image} alt="speaker" />
+      </div>
 
       <div className="text-wrap">
         {isMobile ? null : <p className="position">{props.position}</p>}

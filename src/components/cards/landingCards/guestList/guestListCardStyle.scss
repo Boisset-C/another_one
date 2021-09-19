@@ -4,6 +4,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+
+  @include m.mdMinBreakPoint {
+    max-width: 26rem;
+  }
 }
 
 .position {
@@ -26,6 +30,7 @@
 
   @include m.mdMinBreakPoint {
     background: v.$primaryAccent;
+    max-width: 26rem;
   }
 }
 
@@ -52,9 +57,15 @@
   margin-bottom: 3rem;
 
   @include m.mdMinBreakPoint {
-    max-width: 88%;
     font-size: 16px;
     line-height: 137%;
     margin-left: 16px;
+  }
+}
+
+.guest-list-card-image-wrapper {
+  @include m.mdMinBreakPoint {
+    max-height: auto;
+    max-width: 26rem;
   }
 }

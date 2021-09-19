@@ -15,6 +15,11 @@
     height: auto;
     gap: 1rem;
   }
+
+  @include m.xxlMinBreakPoint {
+    align-items: center;
+    justify-content: center;
+  }
 }
 .beneath-text-wrapper {
   width: 100vw;

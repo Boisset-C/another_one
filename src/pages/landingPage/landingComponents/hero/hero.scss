@@ -1,5 +1,6 @@
 @use "../../../../sassStyles/variables" as v;
 @use "../../../../sassStyles/_mixins" as m;
+
 .hero-container {
   height: auto;
   width: 100vw;
@@ -10,6 +11,10 @@
   @include m.smMinBreakPoint {
     height: 56.25rem;
     width: 100vw;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: auto;
   }
 }
 

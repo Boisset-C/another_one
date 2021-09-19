@@ -1,7 +1,8 @@
 /* 
 This partial contains styling that overrides global elements, such as the #root or body elements. In our example it is also importing the _variable.scss file to reference a color. 
 */
-@use './variables' as v;
+@use "./variables" as v;
+@use "./mixins" as m;
 
 * {
   box-sizing: border-box;
@@ -15,11 +16,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
   background-color: v.$primaryAccent;
-  height: 100vh;
   min-height: 100%;
+  margin-left: center;
 }
 
 #root {
-  height: 100%;
-  max-width: 1400px;
 }
