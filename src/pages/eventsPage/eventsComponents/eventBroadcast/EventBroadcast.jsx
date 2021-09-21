@@ -7,7 +7,7 @@ export function EventBroadcast(props) {
       <h5 className="event-start-time">{props.announcement}</h5>
       <div className="live-stream-wrapper">
         <ReactPlayer
-          url="https://vimeo.com/553101860"
+          url="https://vimeo.com/601261020"
           className="react-player-event-broadcast"
           controls="true"
           width="100%"

@@ -10,14 +10,21 @@
 .archive-replay {
   font-size: 8px;
   line-height: 9px;
+  margin-top: 1rem;
+  margin-left: 0.75rem;
   font-style: normal;
   font-weight: normal;
-  margin-left: 0.75rem;
-  margin-bottom: 0.5rem;
+  text-align: left;
   color: v.$broadcastDark;
 
   @include m.mdMinBreakPoint {
-    margin-left: 5rem;
+    margin-left: 17.6rem;
+    margin-bottom: 0rem;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.4px;
+  }
+  @include m.lgMinBreakPoint {
     margin-bottom: 0rem;
     font-size: 18px;
     line-height: 21px;
@@ -27,28 +34,29 @@
 
 .archive-stream-wrapper {
   position: relative;
-  overflow: hidden;
   padding-top: 40%;
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
 
-  @include m.mdMinBreakPoint {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+  @include m.smMinBreakPoint {
+    padding-top: 40%;
   }
+
   @include m.xxlMinBreakPoint {
-    height: 30vh;
-    width: 70vw;
+    height: 40vh;
+    width: 10vw;
   }
 }
 
-.archive-iframe-responsive {
+.react-player-archive-broadcast {
   position: absolute;
-  top: 0;
+  top: -70%;
   left: 0;
-  width: 100%;
-  height: 100%;
   border: 0;
-  z-index: -1;
+  z-index: 1;
+
+  @include m.smMinBreakPoint {
+    top: 0;
+    left: 0;
+    border: 0;
+    z-index: 1;
+  }
 }

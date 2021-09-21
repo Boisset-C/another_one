@@ -2,68 +2,45 @@
 @use "../../../sassStyles/mixins" as m;
 
 .archive-replay-card-section {
+  position: relative;
+  padding-top: 56.26%;
+  height: 30rem;
+  width: 22rem;
+  margin: 0rem;
+  overflow-y: scroll;
   background: v.$primaryAccent;
+
+  @include m.smMinBreakPoint {
+    margin: 0.75rem;
+  }
+}
+
+.archive-replay-card-title {
+  text-align: left;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+  color: v.$shadeTwo;
+}
+
+.archive-replay-card-description {
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  font-size: 16px;
+  line-height: 22px;
+  color: v.$shadeOne;
 }
 
 .archive-replay-video-wrapper {
-  position: relative;
-  padding-top: 56.25%;
-}
-
-.react-player {
   position: absolute;
-  top: 0;
+  top: -29.5%;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
 .archive-replay-card-text-wrapper {
-  margin-left: 0.75rem;
-}
-
-.archive-card-header {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: left;
-  color: v.$shadeTwo;
-}
-
-.archive-card-event-description {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-  text-align: left;
-  color: v.$shadeOne;
-}
-
-.archive-card-guests {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  color: v.$shadeFour;
-}
-
-.guest-name {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 0rem;
-  letter-spacing: 0.4px;
-  color: v.$shadeOne;
-}
-
-.guest-bio {
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-
-  color: v.$shadeOne;
+  margin: 0.75rem;
 }

@@ -34,9 +34,10 @@ export function ArchiveReplaySection() {
 
   return (
     <section className="archive-replay-section">
-      <ul>
+      <h3 className="archive-replay-header">Catch a replay</h3>
+      <ul className="archive-section-ul-flex">
         {videos.map((v) => (
-          <li key={v.uri}>
+          <li key={v.uri} className="archive-flex-li">
             <ArchiveCardEvent
               name={v.name}
               description={v.description}
@@ -47,81 +48,4 @@ export function ArchiveReplaySection() {
       </ul>
     </section>
   );
-
-  // return (
-  //   <section class="archive-replay-section">
-  //     <h3 class="archive-replay-header">Catch a replay</h3>
-  //     <section className="archive-cards-wrapper">
-  //       {/* <ul>
-  //       {vimeoShowcase.uri.map((uri) => (
-  //         <li>{uri}</li>
-  //       ))}
-  //     </ul> */}
-
-  //       <ArchiveCardEvent
-  //         header={ArchiveReplayCardOne.header}
-  //         description={ArchiveReplayCardOne.description}
-  //         guestNameOne={ArchiveReplayCardOne.guestNameOne}
-  //         guestBioOne={ArchiveReplayCardOne.guestBioOne}
-  //         guestNameTwo={ArchiveReplayCardOne.guestNameTwo}
-  //         guestBioTwo={ArchiveReplayCardOne.guestBioTwo}
-  //         url={ArchiveReplayCardOne.url}
-  //       />
-  //     </section>
-  //   </section>
-  // );
 }
-
-// const [apiResult, setApiResult] = useState({
-//   user: [{ name: "Loading..." }],
-// });
-// const [isLoading, setIsLoading] = useState(false);
-// const [error, setError] = useState(null);
-
-// const fetchShowcaseHandler = useCallBack(async () => {
-//   setIsLoading(true);
-//   setError(null);
-//   try {
-//     const response = await fetch(
-//       "https://api.vimeo.com/users/122555139/albums/8613448",
-//       {
-//         method: "GET",
-//         headers: {
-//           Authorization:
-//             "basic MTI1MGZkNjA0ODE0Y2U3ODM0MTVkYzUyYTA2ZTQ0NTg0NzYyNzgxNzoxUjZldDBtM0o1UGZuV0ltdUFrT0tLWVVlSUZDZlh2bEx5dXNjYUwzM2JBOGRReUdjNWJ3ZTBHRHFLWnhLanRBS3BRK1VUMUE5VUxFNmdiODFyZ0wyRHg5S2MySWZ6TEFYbktNRk9SVDJOZkE2QTFnajh1OXRzSnF3VTBxbkNIcw==",
-//         },
-//       }
-//     );
-//     if (!response.ok) {
-//       throw new Error("something went wrong!");
-//     }
-
-//     const data = await response.json();
-
-//     const transformedShowcase = data.pictures.sizes.map((videoData) => {
-//       return {
-//         title: videoData.title,
-//         description: videoData.description,
-//         link: videoData.link_with_play_button,
-//       };
-//     });
-//     setApiResult(transformedShowcase);
-//   } catch (error) {
-//     setError(error.message);
-//   }
-//   setIsLoading(false);
-// }, []);
-
-// useEffect(() => {
-//   fetchShowcaseHandler();
-// }, [fetchShowcaseHandler]);
-
-// let content = <p>found no videos.</p>;
-
-// if (error) {
-//   content = <p>{error}</p>;
-// }
-
-// if (isLoading) {
-//   content = <p>Loading...</p>;
-// }

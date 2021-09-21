@@ -2,137 +2,32 @@
 @use "../../../sassStyles/mixins" as m;
 
 .event-test-card-container {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
   display: flex;
   flex-direction: column;
+}
+
+.event-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
+  background: v.$positionBackground;
 
   @include m.smMinBreakPoint {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
-  @include m.mdMinBreakPoint {
-    display: flex;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    gap: 1rem;
-  }
-
-  @include m.xxlMinBreakPoint {
-  }
-}
-
-.event-wrapper {
-  background: v.$positionBackground;
-  margin-bottom: 1rem;
-
-  @include m.mdMinBreakPoint {
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 3rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.card-one-test {
-  @include m.mdMinBreakPoint {
-    display: flex;
     flex-direction: row;
-    width: row;
-  }
-
-  @include m.lgMinBreakPoint {
-    flex-direction: row-reverse;
-    align-items: center;
-    gap: 1.5rem;
+    margin: 1rem;
   }
 }
 
-.card-two-test {
-  @include m.mdMinBreakPoint {
-    display: flex;
-    flex-direction: row;
-  }
-
-  @include m.lgMinBreakPoint {
-    flex-direction: row;
-    align-items: center;
-    gap: 1.5rem;
-  }
+.flex-item-upcoming-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
-.event-test-card-title {
-  text-align: left;
-  margin-left: 0.75rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.event-test-card-description {
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-  margin-left: 0.75rem;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.event-test-text {
-  @include m.mdMinBreakPoint {
-    margin-left: 2rem;
-  }
-}
-
-.guest-test {
-  margin-left: 0.75rem;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 0.5rem;
-  font-style: normal;
-  font-weight: normal;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    text-align: left;
-    margin-left: 0rem;
-    margin-bottom: 0rem;
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.event-test-card-time {
-  text-align: left;
-  margin-left: 0.75rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-  }
+.flex-item-test-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
