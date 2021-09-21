@@ -9,7 +9,7 @@ export function EventBroadcast(props) {
         <ReactPlayer
           url="https://vimeo.com/601261020"
           className="react-player-event-broadcast"
-          controls="true"
+          controls={true}
           width="100%"
           height="100%"
         />

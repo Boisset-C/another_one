@@ -20,7 +20,7 @@ export function Hero(props) {
           : { backgroundImage: `url(${heroImage})` }
       }
     >
-      <div class="white-overlay">
+      <div className="white-overlay">
         {isMobile ? null : <DesktopNav />}
         {isMobile ? <MobileNav /> : null}
 

@@ -18,9 +18,9 @@
   }
 }
 
-.video-wrapper {
+.preview-video-wrapper {
   width: 100vw;
-  height: auto;
+  height: 26vh;
 
   @include m.smMinBreakPoint {
     width: 50vw;
@@ -30,14 +30,6 @@
   @include m.mdMinBreakPoint {
     max-width: 44.375rem;
     height: auto;
-  }
-}
-.preview-video {
-  width: 100%;
-  height: 100%;
-
-  @include m.smMinBreakPoint {
-    margin-left: 3rem;
   }
 }
 

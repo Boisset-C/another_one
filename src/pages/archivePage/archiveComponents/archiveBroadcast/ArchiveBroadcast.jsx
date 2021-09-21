@@ -9,7 +9,7 @@ export function ArchiveBroadcast() {
         <ReactPlayer
           url="https://vimeo.com/607568204"
           className="react-player-archive-broadcast"
-          controls="true"
+          controls={true}
           width="100%"
           height="400px"
         />

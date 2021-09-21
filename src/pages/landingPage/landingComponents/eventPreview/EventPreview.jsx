@@ -10,10 +10,10 @@ export function EventPreview(props) {
     <>
       {!formToggle && (
         <section className="event-preview">
-          <div className="video-wrapper">
+          <div className="preview-video-wrapper">
             <ReactPlayer
               url="https://vimeo.com/562894711"
-              controls="true"
+              controls={true}
               height="100%"
               width="100%"
             />
