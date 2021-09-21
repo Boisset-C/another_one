@@ -23,9 +23,9 @@
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.4px;
+    margin-top: 3rem;
   }
   @include m.lgMinBreakPoint {
-    margin-bottom: 0rem;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.4px;
@@ -39,11 +39,6 @@
   @include m.smMinBreakPoint {
     padding-top: 40%;
   }
-
-  @include m.xxlMinBreakPoint {
-    height: 40vh;
-    width: 10vw;
-  }
 }
 
 .react-player-archive-broadcast {
@@ -54,7 +49,7 @@
   z-index: 1;
 
   @include m.smMinBreakPoint {
-    top: 0;
+    top: 12%;
     left: 0;
     border: 0;
     z-index: 1;
