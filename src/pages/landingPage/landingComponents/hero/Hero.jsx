@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { ContactForm } from "../../../../components/form/ContactForm";
 import heroImage from "../../../../assets/landing-images/hero-image.png";
 import mobileHeroImage from "../../../../assets/landing-images/mobile-hero-image.png";
@@ -20,7 +20,7 @@ export function Hero(props) {
           : { backgroundImage: `url(${heroImage})` }
       }
     >
-      <div class="white-overlay">
+      <div className="white-overlay">
         {isMobile ? null : <DesktopNav />}
         {isMobile ? <MobileNav /> : null}
 
@@ -36,7 +36,13 @@ export function Hero(props) {
               Register
             </button>
           )}
-          {formToggle && <ContactForm />}
+          {formToggle && (
+            <div className="hero-overlay">
+              <div className="hero-form">
+                <ContactForm />
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

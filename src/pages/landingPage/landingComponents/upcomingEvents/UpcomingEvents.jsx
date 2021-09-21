@@ -1,4 +1,4 @@
-import { UpcomingCardOne, UpcomingCardTwo } from "../../../../data/landingData";
+import { firstEvent, secondEvent } from "../../../../data/EventPageData";
 import { UpcomingCard } from "../../../../components/cards/landingCards/upcomingCard";
 import "./upcomingEvents.scss";
 
@@ -8,14 +8,14 @@ export function UpcomingEvents() {
       <h3 className="upcoming-events-title">Upcoming Events</h3>
       <div className="upcoming-container">
         <UpcomingCard
-          eventsTitle={UpcomingCardOne.eventsTitle}
-          description={UpcomingCardOne.description}
-          date={UpcomingCardOne.date}
+          title={firstEvent.title}
+          description={firstEvent.description}
+          date={firstEvent.date}
         />
         <UpcomingCard
-          eventsTitle={UpcomingCardTwo.eventsTitle}
-          description={UpcomingCardTwo.description}
-          date={UpcomingCardTwo.date}
+          title={secondEvent.title}
+          description={secondEvent.description}
+          date={secondEvent.date}
         />
       </div>
     </>

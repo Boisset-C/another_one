@@ -1,18 +1,16 @@
-import "./archiveCardEvent";
+import "./archiveCardEvent.scss";
 
 export function ArchiveCardEvent(props) {
   return (
-    <article>
-      <div className="archive-video"></div>
-      <div>
-        <h4>{props.header}</h4>
-        <p>{props.description}</p>
-        <h4>Guests:</h4>
-        <h4>{props.guestNameOne}</h4>
-        <p>{props.guestBioOne}</p>
-        <h4>{props.guestNameTwo}</h4>
-        <p>{props.guestBioTwo}</p>
+    <div className="archive-replay-card-section">
+      <div
+        className="archive-replay-video-wrapper"
+        dangerouslySetInnerHTML={props.iframe}
+      ></div>
+      <div className="archive-replay-card-text-wrapper">
+        <h2 className="archive-replay-card-title">{props.name}</h2>
+        <p className="archive-replay-card-description">{props.description}</p>
       </div>
-    </article>
+    </div>
   );
 }

@@ -17,11 +17,11 @@ export function NextEvent(props) {
           )}
 
           <div className="time">
-            <div>
+            <div className="time-wrapper">
               <div className="event-day">{props.day}</div>
               <time>{props.time}</time>
               <small className="am">{props.AMorPM}</small>
-              <span>{props.timeType}</span>
+              <span className="pst">{props.timeType}</span>
             </div>
 
             <p className="summary">{props.description}</p>

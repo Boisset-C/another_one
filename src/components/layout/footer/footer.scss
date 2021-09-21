@@ -22,6 +22,7 @@
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
+    width: 100vw;
 
     color: v.$shadeOne;
   }
@@ -32,6 +33,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   margin-bottom: 3rem;
   justify-items: center;
+  width: 100vw;
 
   @include m.mdMinBreakPoint {
     display: grid;
@@ -39,8 +41,6 @@
     align-items: center;
     justify-items: center;
     justify-content: center;
-    margin-left: 6rem;
-    margin-right: 6rem;
   }
 }
 

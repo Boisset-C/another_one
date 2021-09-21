@@ -9,8 +9,8 @@ import {
 
 export function GuestList() {
   return (
-    <>
-      <section className="guest-list-container">
+    <section>
+      <div className="guest-list-container">
         <GuestListCard
           position={cardHostData.position}
           name={cardHostData.name}
@@ -29,7 +29,7 @@ export function GuestList() {
           bio={cardGuestDataTwo.bio}
           image={cardGuestDataTwo.image}
         />
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

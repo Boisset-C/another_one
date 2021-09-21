@@ -3,31 +3,33 @@
 
 .event-preview {
   background: v.$lightTwo;
+  width: 100vw;
 
-  @include m.mdMinBreakPoint {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  @include m.smMinBreakPoint {
+    display: flex;
+    flex-direction: row;
     gap: 4rem;
-    margin-top: 13.625rem;
+    margin-top: 5rem;
     background: v.$primaryAccent;
   }
-}
 
-.video-wrapper {
-  width: 100vw;
-  height: 13.875rem;
-
-  @include m.mdMinBreakPoint {
-    max-width: 44.25rem;
-    height: 26.25rem;
+  @include m.xxlMinBreakPoint {
+    margin-left: 12rem;
   }
 }
-.preview-video {
-  width: 100%;
-  height: 100%;
+
+.preview-video-wrapper {
+  width: 100vw;
+  height: 26vh;
+
+  @include m.smMinBreakPoint {
+    width: 50vw;
+    height: auto;
+  }
 
   @include m.mdMinBreakPoint {
-    margin-left: 3rem;
+    max-width: 44.375rem;
+    height: auto;
   }
 }
 
@@ -35,13 +37,13 @@
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding-left: 0rem;
     padding-right: 0rem;
-    width: 30.625rem;
+    max-width: 40vw;
   }
 }
 .event-preview-text {
@@ -50,7 +52,7 @@
   font-size: 14px;
   line-height: 22px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     text-align: left;
     font-style: normal;
     font-weight: normal;
@@ -70,7 +72,7 @@
   margin-top: 0;
   margin-bottom: 0.75rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -84,8 +86,9 @@
   background: darken(v.$bluePrint, 8%);
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 0;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -98,11 +101,32 @@
   background: darken(v.$bluePrint, 20%);
   border-radius: 2px;
   font-size: 12px;
+  margin-top: 0;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
     margin-top: 0rem;
   }
+}
+
+.preview-form {
+  @include m.smMinBreakPoint {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  }
+}
+
+.preview-overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }

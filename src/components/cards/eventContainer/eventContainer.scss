@@ -2,105 +2,39 @@
 @use "../../../sassStyles/mixins" as m;
 
 .event-test-card-container {
-  margin-left: 0.75rem;
-  margin-right: 0.75rem;
   display: flex;
   flex-direction: column;
-
-  @include m.mdMinBreakPoint {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-  }
 }
 
-.event-wrapper {
+.event-flex {
+  display: flex;
+  flex-direction: column;
+  margin: 0.75rem;
   background: v.$positionBackground;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
+    flex-direction: row;
+    margin: 1rem;
+    padding-top: 3rem;
     padding-bottom: 3rem;
+    padding-right: 3rem;
+  }
+  @include m.xxlMinBreakPoint {
+    margin-right: 12rem;
+    margin-left: 6rem;
   }
 }
 
-.card-one-test {
-  @include m.mdMinBreakPoint {
-    display: grid;
-    grid-template-columns: 1fr 0.75fr 0.75fr;
-  }
+.flex-item-upcoming-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
-.event-test-card-title {
-  text-align: left;
-  margin-left: 0.75rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.event-test-card-description {
-  text-align: left;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 20px;
-  margin-left: 0.75rem;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.event-test-text {
-  @include m.mdMinBreakPoint {
-    margin-left: 2rem;
-  }
-}
-
-.guest-test {
-  margin-left: 0.75rem;
-  font-size: 18px;
-  line-height: 22px;
-  margin-bottom: 0.5rem;
-  font-style: normal;
-  font-weight: normal;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    text-align: right;
-    width: 46.5%;
-    font-size: 24px;
-    line-height: 32px;
-  }
-}
-
-.event-test-card-time {
-  text-align: left;
-  margin-left: 0.75rem;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 20px;
-  color: v.$shadeTwo;
-
-  @include m.mdMinBreakPoint {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-  }
+.flex-item-test-card {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  justify-items: center;
 }

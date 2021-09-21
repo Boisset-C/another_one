@@ -21,11 +21,11 @@ export const eventDetails = {
 
 /* first upcoming event */
 export const firstEvent = {
-  titleOne:
+  title:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-  descriptionOne:
+  description:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
-  dateOne: "Aug 3rd @ 10:00 am PST",
+  date: "Aug 3rd @ 10:00 am PST",
 };
 
 // card one
@@ -44,11 +44,11 @@ export const firstEventGuestTwo = {
 
 /* second upcoming event */
 export const secondEvent = {
-  titleTwo:
+  title:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
-  descriptionTwo:
+  description:
     "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet",
-  dateTwo: "More details coming soon",
+  date: "More details coming soon",
 };
 
 // card one

@@ -1,18 +1,18 @@
 import "./eventBroadcast.scss";
+import ReactPlayer from "react-player";
 
 export function EventBroadcast(props) {
   return (
-    <section>
+    <section className="broadcast-container">
       <h5 className="event-start-time">{props.announcement}</h5>
       <div className="live-stream-wrapper">
-        <iframe
-          className="iframe-responsive"
-          title="Veteran Interview BroadCast"
-          src="https://vimeo.com/event/2351/embed"
-          frameBorder="0"
-          allow="autoplay;fullscreen"
-          allowFullScreen
-        ></iframe>
+        <ReactPlayer
+          url="https://vimeo.com/601261020"
+          className="react-player-event-broadcast"
+          controls={true}
+          width="100%"
+          height="100%"
+        />
       </div>
     </section>
   );

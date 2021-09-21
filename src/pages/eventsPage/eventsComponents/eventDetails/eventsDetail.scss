@@ -10,6 +10,10 @@
     margin-left: 5rem;
     margin-bottom: 3rem;
   }
+
+  @include m.xxlMinBreakPoint {
+    margin-left: 17.2rem;
+  }
 }
 
 .event-broadcast-title {

@@ -29,4 +29,4 @@ export { secondEvent } from "./EventPageData";
 
 export { archiveTopSection } from "./ArchivePageData";
 export { archiveDetailsBroadcast } from "./ArchivePageData";
-export {} from "./ArchivePageData";
+export { ArchiveReplayCardOne } from "./ArchivePageData";

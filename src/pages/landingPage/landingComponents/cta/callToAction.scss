@@ -5,9 +5,13 @@
   margin-left: 0.75rem;
   margin-bottom: 5rem;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     max-width: 39.375rem;
     margin-left: 3rem;
+  }
+
+  @include m.xxlMinBreakPoint {
+    margin: auto;
   }
 }
 
@@ -19,7 +23,7 @@
   line-height: 20px;
   color: v.$shadeOne;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     font-style: normal;
     font-weight: normal;
     font-size: 1.5rem;
@@ -35,7 +39,7 @@
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -49,7 +53,7 @@
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
@@ -63,9 +67,29 @@
   border-radius: 2px;
   font-size: 12px;
 
-  @include m.mdMinBreakPoint {
+  @include m.smMinBreakPoint {
     width: 18.875rem;
     height: 4rem;
     font-size: 1.125rem;
   }
+}
+
+.cta-form {
+  @include m.smMinBreakPoint {
+    display: flex;
+    justify-content: center;
+    margin-top: 10rem;
+  }
+}
+
+.cta-overlay {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
