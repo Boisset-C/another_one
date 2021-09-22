@@ -2,6 +2,9 @@
 @use "../../../../sassStyles/mixins" as m;
 
 .archive-container {
+  @include m.smMinBreakPoint {
+    margin-bottom: 23rem;
+  }
   @include m.xxlMinBreakPoint {
     margin-left: 12rem;
   }
@@ -17,8 +20,12 @@
   text-align: left;
   color: v.$broadcastDark;
 
+  @include m.smMinBreakPoint {
+    margin-left: 3rem;
+  }
+
   @include m.mdMinBreakPoint {
-    margin-left: 17.6rem;
+    margin-left: 3rem;
     margin-bottom: 0rem;
     font-size: 18px;
     line-height: 21px;
@@ -26,9 +33,12 @@
     margin-top: 3rem;
   }
   @include m.lgMinBreakPoint {
+    margin-left: 17.4rem;
+    margin-bottom: 0rem;
     font-size: 18px;
     line-height: 21px;
     letter-spacing: 0.4px;
+    margin-top: 3rem;
   }
 }
 
@@ -37,7 +47,7 @@
   padding-top: 40%;
 
   @include m.smMinBreakPoint {
-    padding-top: 40%;
+    padding-top: 10%;
   }
 }
 
@@ -49,7 +59,7 @@
   z-index: 1;
 
   @include m.smMinBreakPoint {
-    top: 12%;
+    top: 30%;
     left: 0;
     border: 0;
     z-index: 1;
