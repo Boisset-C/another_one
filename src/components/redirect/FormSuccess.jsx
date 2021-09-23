@@ -6,7 +6,7 @@ import "./formSuccess.scss";
 export function FormSuccess() {
   return (
     <article className="success-container">
-      <div class="success-logos">
+      <div className="success-logos">
         <div>
           <SideBarLogo />
         </div>

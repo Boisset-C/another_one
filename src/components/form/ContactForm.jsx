@@ -27,8 +27,8 @@ export function ContactForm() {
       data-netlify="true"
       */
         >
-          <div class="contact-form-container">
-            <div class="form-logos">
+          <div className="contact-form-container">
+            <div className="form-logos">
               <div>
                 <SideBarLogo />
               </div>
